@@ -4,6 +4,9 @@
 #include "zip.h"
 #include "window.h"
 
+#pragma comment(lib, "zlib.lib")
+#pragma comment(lib, "ComDlg32.lib")
+#pragma comment(lib, "winhttp.lib")
 
 //int main(void){
 int WINAPI WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,LPSTR lpszCmdLine,int nCmdShow){

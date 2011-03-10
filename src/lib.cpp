@@ -1,7 +1,7 @@
 
+#include "boost/assert.hpp"
 #include <stdio.h>
 #include <windows.h>
-#include <atlbase.h>
 #include "lib.h"
 
 const char *id2char(int id){
@@ -14,7 +14,7 @@ const char *id2char(int id){
 		{"•¡”"}};
 	if(id>21){
 		printf("Error:id2char ”ÍˆÍŠO‚ÌID\n");
-		ATLASSERT(false);
+		BOOST_ASSERT(false);
 		return db[0];
 	}
 	return db[id];
@@ -29,7 +29,7 @@ char *id2char2(int id){
 		{"other"}};
 	if(id>21){
 		printf("Error:id2char ”ÍˆÍŠO‚ÌID\n");
-		ATLASSERT(false);
+		BOOST_ASSERT(false);
 		return db[0];
 	}
 	return db[id];
